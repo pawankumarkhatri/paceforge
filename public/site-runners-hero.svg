@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5f4f2"/>
+      <stop offset="0.6" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5f4f2"/>
+    </linearGradient>
+    <linearGradient id="route" x1="80" y1="200" x2="1120" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fc4c02" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#fc4c02" stop-opacity="0.9"/>
+      <stop offset="0.8" stop-color="#fc4c02" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fc4c02" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#sky)"/>
+  <path d="M60 210 C200 180 400 195 600 175 S1000 190 1140 205" stroke="url(#route)" stroke-width="6" stroke-linecap="round" fill="none"/>
+  <g fill="#0e0e0e" opacity="0.06">
+    <ellipse cx="220" cy="235" rx="100" ry="12"/>
+    <ellipse cx="600" cy="240" rx="120" ry="14"/>
+    <ellipse cx="980" cy="232" rx="105" ry="12"/>
+  </g>
+  <g fill="#0e0e0e" opacity="0.72">
+    <circle cx="300" cy="108" r="28"/>
+    <path d="M272 142l-24 68 36 14 28-58 44 12 52 82 30-6-48-88-58-14z"/>
+    <circle cx="600" cy="98" r="28"/>
+    <path d="M572 132l-26 66 38 16 30-52 46 8 54 80 28-8-50-84-60-12z"/>
+    <circle cx="900" cy="104" r="28"/>
+    <path d="M872 138l-20 70 32 12 24-58 38 12 46 78 32-4-42-92-56-12z"/>
+  </g>
+</svg>
