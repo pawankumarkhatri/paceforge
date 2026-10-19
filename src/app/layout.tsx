@@ -43,14 +43,16 @@ export const metadata: Metadata = {
     title: "PaceForge",
     statusBarStyle: "default",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large" },
+  },
   openGraph: {
     type: "website",
     locale: "en_IN",
     alternateLocale: ["hi_IN", "en_US"],
     siteName: "PaceForge",
-    title: "PaceForge — VDOT Marathon Engine",
-    description:
-      "Turn a recent race into VDOT, training paces, and race-day splits. Mobile-friendly PWA in English and Hindi.",
   },
 };
 
