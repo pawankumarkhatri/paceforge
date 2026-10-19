@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
-import { siteUrl } from "@/lib/site-url";
+
+const SITEMAP_BASE =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://paceforge.in";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -8,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/organizer",
     },
-    sitemap: `${siteUrl()}/sitemap.xml`,
+    sitemap: `${SITEMAP_BASE}/sitemap.xml`,
   };
 }
