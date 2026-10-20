@@ -1,4 +1,4 @@
-const CACHE = "paceforge-v5";
+const CACHE = "paceforge-v6";
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();

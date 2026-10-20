@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const SITEMAP_BASE =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://paceforge.in";
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://www.paceforge.in";
 
 export default function robots(): MetadataRoute.Robots {
   return {
