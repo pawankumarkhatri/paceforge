@@ -1,5 +1,13 @@
 {
   "env": {
     "NEXT_PUBLIC_SITE_URL": "https://paceforge.in"
-  }
+  },
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.paceforge.in" }],
+      "destination": "https://paceforge.in/:path*",
+      "permanent": true
+    }
+  ]
 }
