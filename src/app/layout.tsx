@@ -3,6 +3,7 @@ import { Noto_Sans_Devanagari, Outfit, Plus_Jakarta_Sans } from "next/font/googl
 import { AppShell } from "@/components/layout/app-shell";
 import { Providers } from "@/components/providers";
 import { PwaRegister } from "@/components/pwa-register";
+import { VercelInsights } from "@/components/vercel-insights";
 import { siteUrl } from "@/lib/site-url";
 import "./globals.css";
 
@@ -73,6 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Providers>
           <PwaRegister />
           <AppShell>{children}</AppShell>
+          <VercelInsights />
         </Providers>
       </body>
     </html>
