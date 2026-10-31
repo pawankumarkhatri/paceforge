@@ -126,6 +126,21 @@ export const en = {
     fuelGuideTitle: "Fueling tab",
     fuelGuide:
       "Enter weight, expected duration, and weather. You will get hourly carb targets and reminders for gels and drinks — practice this on long runs before race day.",
+    tabIndia: "India marathons",
+    indiaTitle: "Top marathons & road races in India",
+    indiaDescription:
+      "Popular certified events across the country — typical months, distances, and tips for pacing and fueling in PaceForge. Always confirm dates and registration on the official race website.",
+    indiaFilterAll: "All",
+    indiaFilterMarathon: "Full marathon",
+    indiaFilterHalf: "Half marathon",
+    indiaFilter10k: "10K",
+    indiaPlanCta: "Plan in PaceForge →",
+    indiaOfficialSite: "Official site ↗",
+    indiaDisclaimer:
+      "Calendar months are typical, not guaranteed. Courses, categories, and eligibility change each year — verify before you travel or register.",
+    indiaGuideTitle: "India marathons tab",
+    indiaGuide:
+      "Browse major Indian road races, filter by distance, then jump to Splits, Pace band, or VDOT to build your plan.",
   },
 } as const;
 
