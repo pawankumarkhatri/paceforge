@@ -9,6 +9,7 @@ import {
   type IndiaRaceDistanceId,
   type IndiaMarathon,
 } from "@/lib/india-marathons";
+import { raceDayPlanHref } from "@/lib/race-day-tabs";
 import { useI18n } from "@/lib/i18n/context";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -124,7 +125,7 @@ function RaceCard({
       <p className="text-sm text-muted leading-relaxed">{race.tip}</p>
       <div className="flex flex-wrap gap-3 pt-1">
         <Link
-          href={primary === "10k" ? "/vdot" : "/race-day#splits"}
+          href={raceDayPlanHref(primary)}
           className="text-sm font-semibold text-runner-green hover:underline"
         >
           {planLabel}

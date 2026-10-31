@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import {
   RACE_DISTANCES,
   buildSplitMatrix,
@@ -25,10 +26,23 @@ const PROFILES: { id: PacingProfile; label: string }[] = [
 ];
 
 export function SplitMatrix() {
+  const searchParams = useSearchParams();
   const [raceId, setRaceId] = useState("half");
   const [customKm, setCustomKm] = useState("");
   const [goalTime, setGoalTime] = useState("1:45:00");
   const [profile, setProfile] = useState<PacingProfile>("negative3");
+
+  useEffect(() => {
+    const race = searchParams.get("race");
+    if (!race) return;
+    if (RACE_DISTANCES.some((r) => r.id === race)) {
+      setRaceId(race);
+      if (race === "marathon") setGoalTime("4:00:00");
+      if (race === "half") setGoalTime("1:45:00");
+      if (race === "10k") setGoalTime("0:50:00");
+      if (race === "5k") setGoalTime("0:25:00");
+    }
+  }, [searchParams]);
 
   const distanceKm = useMemo(() => {
     if (raceId === "custom") return customDistanceKm(customKm);
